@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.movies.portal.model.Movies" table="Movies">
+		<id name="id" type="int">
+			<column name="id" precision="5" scale="0" />
+			<generator class="assigned" />
+		</id>
+		<property name="director_name" type="string">
+			<column name="director_name"  />
+		</property>
+		<property name="num_critic_for_reviews" type="int">
+			<column name="num_critic_for_reviews"  />
+		</property>
+		<property name="duration" type="int">
+			<column name="duration" length="7"  />
+		</property>
+		<property name="director_facebook_likes" type="int">
+			<column name="director_facebook_likes"  />
+		</property>
+		<property name="actor_3_facebook_likes" type="int">
+			<column name="actor_3_facebook_likes" />
+		</property>
+		<property name="actor_2_name" type="string">
+			<column name="actor_2_name"  />
+		</property>
+		<property name="actor_1_facebook_likes" type="int">
+			<column name="actor_1_facebook_likes"  />
+		</property>
+		<property name="gross" type="int">
+			<column name="gross" />
+		</property>
+		<property name="genres" type="string">
+			<column name="genres" length="7" not-null="true" />
+		</property>
+		<property name="actor_1_name" type="string">
+			<column name="actor_1_name"  />
+		</property>
+		<property name="movie_title" type="string">
+			<column name="movie_title" length="20" not-null="true" />
+		</property>
+		<property name="num_voted_users" type="int">
+			<column name="num_voted_users" length="7" not-null="true" />
+		</property>
+		<property name="cast_total_facebook_likes" type="int">
+			<column name="cast_total_facebook_likes" length="20" not-null="true" />
+		</property>
+		<property name="actor_3_name" type="string">
+			<column name="actor_3_name" />
+		</property>
+		<property name="facenumber_in_poster" type="int">
+			<column name="facenumber_in_poster"  />
+		</property>
+		<property name="plot_keywords" type="string">
+			<column name="plot_keywords"  />
+		</property>
+		<property name="movie_imdb_link" type="string">
+			<column name="movie_imdb_link"  />
+		</property>
+		<property name="num_user_for_reviews" type="int">
+			<column name="num_user_for_reviews"  />
+		</property>
+		<property name="language" type="string">
+			<column name="language"  />
+		</property>
+		<property name="country" type="string">
+			<column name="country"  />
+		</property>
+		<property name="content_rating" type="string">
+			<column name="content_rating"  />
+		</property>
+		<property name="budget" type="int">
+			<column name="budget" />
+		</property>
+		<property name="title_year" type="int">
+			<column name="title_year"  />
+		</property>
+		<property name="actor_2_facebook_likes" type="int">
+			<column name="actor_2_facebook_likes" />
+		</property>
+		<property name="imdb_score" type="double">
+			<column name="imdb_score" length="20" not-null="true" />
+		</property>
+		<property name="aspect_ratio" type="double">
+			<column name="aspect_ratio"  />
+		</property>
+		<property name="movie_facebook_likes" type="int">
+			<column name="movie_facebook_likes" length="7" not-null="true" />
+		</property>
+	</class>
+</hibernate-mapping>

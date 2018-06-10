@@ -1,0 +1,9 @@
+com\movies\portal\controller\MoviesController.class
+com\movies\portal\dao\AbstractDao.class
+com\movies\portal\dao\MoviesDaoImpl.class
+com\movies\portal\dao\HbUtil.class
+com\movies\portal\model\Movies.class
+com\movies\portal\controller\MainMovies.class
+com\movies\portal\dao\MoviesDao.class
+com\movies\portal\service\MoviesServiceImpl.class
+com\movies\portal\service\MoviesService.class
